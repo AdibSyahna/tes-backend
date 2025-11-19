@@ -1,0 +1,6 @@
+if exist node_modules\ (
+    npm start
+) else (
+    npm i
+    npm start
+)

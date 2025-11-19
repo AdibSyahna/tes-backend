@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <script src="./bootstrap.js"></script>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <style>
+        #log-box {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 30vh;
+            overflow: auto;
+        }
+
+        code.log {
+            color: white;
+        }
+
+        code.info {
+            color: lightskyblue
+        }
+
+        code.warn {
+            color: lightsalmon
+        }
+
+        code.error {
+            color: red;
+        }
+    </style>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">
+            <%= title %>
+        </h1>
+        <h4>
+            <%= description %>
+        </h4>
+
+        <p id="status">Connecting...</p>
+
+        <button id="start-btn" type="button" onclick="Main.start()" class="btn btn-primary">Start</button>
+
+        <div id="log-box" class="container text-start mt-5 bg-black text-white">
+
+        </div>
+    </div>
+</body>
+
+</html>
